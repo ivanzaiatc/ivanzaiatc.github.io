@@ -58,8 +58,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('#language').addEventListener('change', (event) => {
-                const language = event.target.value;
-                window.location.href = `/${language}`;
+                window.location.href = event.target.value;
             });
         })
     </script>
@@ -67,9 +66,9 @@
 <body>
 <header>
     <select name="language" id="language">
-        <option value="/index.html">🇷🇺</option>
-        <option value="/en.html">🇺🇸</option>
-        <option value="/fin.html">🇫🇮</option>
+        <option value="index.html">🇷🇺</option>
+        <option value="en.html">🇺🇸</option>
+        <option value="fin.html">🇫🇮</option>
     </select>
 </header>
 <main>
