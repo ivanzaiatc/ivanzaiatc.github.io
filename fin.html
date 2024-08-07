@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
           rel="stylesheet">
-    <title>Иван Заяц</title>
+    <title>IT <бродяга/></title>
     <style>
         html {
             font-family: "Roboto", sans-serif;
@@ -59,7 +59,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('#language').addEventListener('change', (event) => {
                 const language = event.target.value;
-                window.location.href = `/${language}`;
+                window.location.href = `/${language}.html`;
             });
         })
     </script>
@@ -67,19 +67,19 @@
 <body>
 <header>
     <select name="language" id="language">
-        <option value="/index.html">🇷🇺</option>
-        <option value="/en.html">🇺🇸</option>
-        <option value="/fin.html">🇫🇮</option>
+        <option value="">🇷🇺</option>
+        <option value="en.html">🇺🇸</option>
+        <option value="fin.html">🇫🇮</option>
     </select>
 </header>
 <main>
     <section>
-        👋 Привет, я Иван!
+        👋 Hei, olen Ivan!
         <p>
-            Я опытный Fullstack (Frontend + Backend = ❤️) разработчик и я рад делится своим опытом с вами!
+            Olen kokenut Fullstack (Frontend + Backend = ❤️) koodari!
         </p>
         <p>
-            Рассказываю о разработке и карьере на своем YouTube-канале (подпишись, там много полезного).
+            Kerron ohjelmoinista YouTube-kanavallani.
         </p>
     </section>
 </main>
