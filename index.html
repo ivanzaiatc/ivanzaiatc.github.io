@@ -42,25 +42,34 @@
             }
         }
 
-        main {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 80vh;
-            @media only screen and (min-width: 800px) {
-                flex-direction: row;
+        div {
+            max-width: 1000px;
+            margin: 0 auto;
+
+            main {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                @media only screen and (min-width: 800px) {
+                    flex-direction: row;
+                }
+
+                section {
+                    max-width: 550px;
+                }
+
+                img {
+                    border-radius: 25px;
+                }
             }
 
             section {
-                max-width: 550px;
-            }
 
-            img {
-                border-radius: 25px;
             }
+        }
 
-            max-width: 1000px;
-            margin: 0 auto;
+        section:last-child {
+            min-height: 30vh;
         }
 
         footer {
@@ -88,30 +97,33 @@
 </head>
 <body>
 <header>
-    <select name="language" id="language">
-        <option value="/index.html" selected>🇷🇺</option>
-        <option value="/en.html">🇺🇸</option>
-        <option value="/fin.html">🇫🇮</option>
-    </select>
 </header>
-<main>
+<div>
+    <main>
+        <section>
+            <p>
+                👋 Привет, я Иван!
+            </p>
+            <p>
+                Я опытный Fullstack (Frontend + Backend = ❤️) разработчик, и это мой <span style="font-weight: bold">роудмап!</span>
+            </p>
+            <p>
+                Пройдя его, ты станешь настоящим <a>Fullstack разработчиком!</a>
+            </p>
+            <p>
+                Залетай в <a>телегу</a>,
+                там получишь помощь и найдешь друзей.
+            </p>
+        </section>
+        <div>
+            <img src="img/me.png" width="350px" alt="my picture"/>
+        </div>
+    </main>
     <section>
-        <p>
-            👋 Привет, я Иван!
-        </p>
-        <p>
-            Я опытный Fullstack (Frontend + Backend = ❤️) разработчик и я рад делится своим опытом с вами!
-        </p>
-        <p>
-            Рассказываю о разработке и карьере на своем <a
-                href="https://www.youtube.com/channel/UC_Bb9fxkKcCJjUaEd-Oj_XA" target="_blank">YouTube-канале</a>
-            (подпишись, там много полезного).
-        </p>
+        <h2>Погнали...</h2
+
     </section>
-    <div>
-        <img src="img/me.png" width="350px" alt="my picture"/>
-    </div>
-</main>
+</div>
 <footer>
     <ul>
         <li><a href="https://www.youtube.com/channel/UC_Bb9fxkKcCJjUaEd-Oj_XA" target="_blank">
